@@ -1,6 +1,3 @@
-
-
-
 <!DOCTYPE html>
 <html>
 <?php
@@ -83,17 +80,17 @@
 <!--        <?php echo '1.session'; var_dump($_SESSION); echo '<hr>';?>-->
             <?php if(empty($_SESSION)){
 
- echo '<div class="container" id="reg-cont">
+    echo '<div class="container" id="reg-cont">
         <center>
             <h4>Login</h4></center>
         <form action="" method="POST" class="reg-c" id="myForm">
             <div class="input-field col s6">
-                <input id="uname" type="text" class="validate" name="username" required>
-                <label for="uname">Username</label>
+                <input id="uname" type="text" placeholder="Username" class="validate" name="username" required>
+                
             </div>            
             <div class="input-field col s6">
-                <input id="pwd" type="password" class="validate" name="password" pattern=".{6,}" required>
-                <label for="pwd">Password</label>
+                <input id="pwd" type="password" placeholder="Password" class="validate" name="password" pattern=".{6,}" required>
+                
             </div>
             <p>
       <input type="checkbox" class="filled-in" id="filled-in-box" checked="checked" />
@@ -150,16 +147,16 @@
             
             echo '<body onload="Materialize.toast(\'Wrong username or password!\', 4000, \'red\')">';
 //            echo '<div class="container" id="reg-cont">
-//        <center>
+// <center>
 //            <h4>Login</h4></center>
 //        <form action="" method="POST" class="reg-c" id="myForm">
 //            <div class="input-field col s6">
-//                <input id="uname" type="text" class="validate" name="username" required>
-//                <label for="uname">Username</label>
-//            </div>            
+//                <input id="uname" type="text" placeholder="Username" class="validate" name="username" required>
+//                
+//           </div>            
 //            <div class="input-field col s6">
-//                <input id="pwd" type="password" class="validate" name="password" pattern=".{6,}" required>
-//                <label for="pwd">Password</label>
+//                <input id="pwd" type="password" placeholder="Password" class="validate" name="password" pattern=".{6,}" required>
+//                
 //            </div>
 //            <p>
 //      <input type="checkbox" class="filled-in" id="filled-in-box" checked="checked" />
