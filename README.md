@@ -1,4 +1,8 @@
-[![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)   
+[![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+
+[![License: GPL v3](https://img.shields.io/badge/PHP-7.x-blue.svg)](http://php.net)
+[![License: GPL v3](https://img.shields.io/badge/MySQL-%5E5.6-green.svg)](https://www.mysql.com)
+[![License: GPL v3](https://img.shields.io/badge/Materialize-0.98.0-orange.svg)](https://materializecss.com/)
 <p align="center">
   <img src="https://github.com/ofarukcaki/dataleaks/blob/master/readme-images/logo-dark.png?raw=true" height="78" width="300"/>    
 </p>
