@@ -1,12 +1,16 @@
 <?php
-define('DB_HOST', '');
-define('DB_NAME', '');
-define('DB_USER', '');
-define('DB_PASS', '');
+/*
+	CONFIG FILE FOR DATABREACHES/DATABASES
+*/
+define('DB_HOST', '127.0.0.1');// default value: localhost or 127.0.0.1
+define('DB_NAME', '');// database name
+define('DB_USER', '');// username
+define('DB_PASS', '');// password
+
 try{
 	$db = new PDO("mysql:host=".DB_HOST.";dbname=".DB_NAME, DB_USER, DB_PASS);
 }
 catch(PDOException $e){
-	die('<h3>Unable to connect data servers... Please try again later</h3><br/>');
+	die('Unable to connect data servers... Please try again later');
 }
 ?>

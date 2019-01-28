@@ -1,17 +1,15 @@
-[![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
-
-[![License: GPL v3](https://img.shields.io/badge/PHP-7.x-blue.svg)](http://php.net)
-[![License: GPL v3](https://img.shields.io/badge/MySQL-%5E5.6-green.svg)](https://www.mysql.com)
-[![License: GPL v3](https://img.shields.io/badge/Materialize-0.98.0-orange.svg)](https://materializecss.com/)
 <p align="center">
   <img src="https://github.com/ofarukcaki/dataleaks/blob/master/readme-images/logo-dark.png?raw=true" height="78" width="300"/>    
 </p>
+
+[![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0) [![License: GPL v3](https://img.shields.io/badge/PHP-7.x-blue.svg)](http://php.net) [![License: GPL v3](https://img.shields.io/badge/MySQL-%5E5.6-green.svg)](https://www.mysql.com) [![License: GPL v3](https://img.shields.io/badge/Materialize-0.98.0-orange.svg)](https://materializecss.com/)
 
 <center>
   <h1 style="text-align:center;">Data Breach Search Engine</h1>
 </center>
 
 I developed this website once and decided to open source it.
+Warning: still very unstable and needs to be worked on more, great starting point for any project similar to this
 
 ## Features
 
@@ -42,6 +40,9 @@ I developed this website once and decided to open source it.
 ## Requirements
 - PHP 7.x
 - MySQL
+- PDO Extension
+- MySQL Extension
+- A Brain
 
 ## Install
 
@@ -52,13 +53,23 @@ First, clone the repo to your server's main directory
 ####  Enter necessary database credentials:
 There are 2 databases, one for data breaches and other for users' data.
 
-**./config.php** *line:2*: -> Database settings for  data breaches
+**./config.php** *line:5-8*: -> Database settings for  data breaches
 
-    $db  =  new  PDO('mysql:host=<HOST_IP>;dbname=<DATABASE_NAME>','<DB_USER_NAME>','<DB_PASSWORD>');
+```
+define('DB_HOST', '');// default value: localhost or 127.0.0.1
+define('DB_NAME', '');// database name
+define('DB_USER', '');// username
+define('DB_PASS', '');// password
+```
 
-**./connection.php** *line2*: Authentication database
+**./connection.php** *line:5-8*: Authentication database
 
-    try{$db_site = new PDO('mysql:host=localhost;dbname=auth','root','');
+```
+define('DB_HOST', '');// default value: localhost or 127.0.0.1
+define('DB_NAME', '');// database name
+define('DB_USER', '');// username
+define('DB_PASS', '');// password
+```
 
 ## Live Demo
 Not available for now, you can edit this README.md file with live install.
