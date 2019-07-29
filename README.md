@@ -38,7 +38,7 @@ I developed this website once and decided to open source it.
 ## Requirements
 - PHP 7.x
 - MySQL
-- PHO PDO extension
+- PHP PDO extension
 
 ## Install
 
