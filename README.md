@@ -42,7 +42,7 @@ I developed this website once and decided to open source it.
 
 ## Install
 
-First, clone the repo to your server's main directory
+First, clone the repo to your server's main directory. Or download the zip and extract
 
     git clone https://github.com/ofarukcaki/dataleaks.git
 
@@ -50,32 +50,42 @@ First, clone the repo to your server's main directory
 There are 2 databases, one for data breaches and other for users' data.
 
 **./config.php** *line:2*: -> Database settings for  data breaches
+  - create a database and enter your credentials, this will be the database which stores the datas(aka breaches). Import the exampleSite_com.sql file located on /databases/ folder to your database and use the same format for your next tables. 
 
     $db  =  new  PDO('mysql:host=<HOST_IP>;dbname=<DATABASE_NAME>','<DB_USER_NAME>','<DB_PASSWORD>');
 
 **./connection.php** *line2*: Authentication database
+  - Create a "auth" database and enter credentials on connection.php file. This database is for authentication and user related stuff. aAfter creating the database import the sample users.sql file located on /databases/users.sql and use the same structure.
 
     try{$db_site = new PDO('mysql:host=localhost;dbname=auth','root','');
+    
 
-## Live Demo
-Not available for now, you can edit this README.md file with live install.
+# F.A.Q
 
----
-*There was a referral system and very good-looking referrals page but I lost that version on my corrupted Hard Drive.
+### How do I import new databases?
+- You can simply create new tables under dataleaks database, every unique table represents databases -breaches-
 
-I will update with the latest version when I get access again to my HDD.
+### I imported the sample table but when I make a search there is no results?
+- Searching is case sensitive. If your data on your table is "User123" and you can searhc for "user123" there will be no result show up
+
+### Can I import new breaches usin admin panel?
+- There is **no**admin pael or so. This is requires a basic sql knowledge. You can import using cli interface of mysqlor use tools like navicat.
+
+### I receive an error and its not working?
+- Check the requirements again on top of this page
+
+### I need help/ I have aquestion?
+- [Create an issue here](https://github.com/ofarukcaki/dataleaks/issues). So others may help
 
 
-# Support
-### Support the developer and project
-*BTC:* **38bfHGSauMEXArpdRrPf2e2DR1fW3HSwAV**  
-*ETH:*  **0xfe9D665AD3De716Cb89A946a8d2BF74FeC815c49**  
-*LTC:*  **M8XhgUxs7WbGpMJshL9rnFo8KcGwhxtYi1**
+# This repository isn't maintained and I won't provide any support from now on. If you read everything carefully I explained how to install it, you won't face any problems if you do everything as should be. 
+
+## And please do not send me an email related to support. Create an issue here instead, that also doesn't mean I'll take care of them
 
 
 ---
 Logo by [@omergulen](https://github.com/omergulen).  
-Dataleaks logo is under licensed, can not be used for neither commercial or personal.
+Dataleaks logo can not be used for neither commercial or personal.
 
 
 ## Disclaimer
