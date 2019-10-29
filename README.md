@@ -7,6 +7,8 @@
   <h1 style="text-align:center;">Data Breach Search Engine</h1>
 </center>
 
+[Read the announcement](#this-repository-isnt-maintained-and-i-wont-provide-any-support-from-now-on-if-you-read-everything-carefully-i-explained-how-to-install-it-you-wont-face-any-problems-if-you-do-everything-as-should-be)
+
 I developed this website once and decided to open source it.
 
 ## Features
