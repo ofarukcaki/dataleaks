@@ -54,12 +54,12 @@ There are 2 databases, one for data breaches and other for users' data.
 **./config.php** *line:2*: -> Database settings for  data breaches
   - create a database and enter your credentials, this will be the database which stores the datas(aka breaches). Import the exampleSite_com.sql file located on /databases/ folder to your database and use the same format for your next tables. 
 
-    ```php $db  =  new  PDO('mysql:host=<HOST_IP>;dbname=<DATABASE_NAME>','<DB_USER_NAME>','<DB_PASSWORD>');```
+    ```$db  =  new  PDO('mysql:host=<HOST_IP>;dbname=<DATABASE_NAME>','<DB_USER_NAME>','<DB_PASSWORD>');```
 
 **./connection.php** *line2*: Authentication database
   - Create a "auth" database and enter credentials on connection.php file. This database is for authentication and user related stuff. aAfter creating the database import the sample users.sql file located on /databases/users.sql and use the same structure.
 
-    ```php try{$db_site = new PDO('mysql:host=localhost;dbname=auth','root','');```
+    ```{$db_site = new PDO('mysql:host=localhost;dbname=auth','root','');```
     
 
 # F.A.Q
