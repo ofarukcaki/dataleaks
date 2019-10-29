@@ -59,7 +59,7 @@ There are 2 databases, one for data breaches and other for users' data.
 **./connection.php** *line2*: Authentication database
   - Create a "auth" database and enter credentials on connection.php file. This database is for authentication and user related stuff. aAfter creating the database import the sample users.sql file located on /databases/users.sql and use the same structure.
 
-    ```{$db_site = new PDO('mysql:host=localhost;dbname=auth','root','');```
+    ```$db_site = new PDO('mysql:host=localhost;dbname=auth','root','');```
     
 
 # F.A.Q
